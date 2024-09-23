@@ -1,4 +1,5 @@
 "use server";
+
 async function sendMessage(message) {
     const chatId = process.env.LINUX_DAY_TELEGRAM_BOT_CHAT_ID;
     const token = process.env.LINUX_DAY_TELEGRAM_BOT_TOKEN; // Il token del bot dalle variabili d'ambiente
