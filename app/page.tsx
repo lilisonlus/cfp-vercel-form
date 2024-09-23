@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,7 +9,9 @@ export default function Home() {
           <p className="mr-2.5 text-7xl font-bold uppercase lg:text-[8rem]">
             Linux
           </p>
-          <img
+          <Image
+            height={30}
+            width={30}
             className="w-16 lg:w-32"
             src="/linuxday_fullcolor.svg"
             alt="Linux Day Logo"
@@ -33,13 +36,17 @@ export default function Home() {
         </p>
         <div className="flex flex-col items-center justify-center lg:flex-row">
           <div className="flex flex-col items-center justify-center lg:relative lg:items-end">
-            <img
-              className="hidden lg:absolute lg:-left-36 lg:block lg:w-48 xl:w-64 xl:-left-44"
+            <Image
+              height={30}
+              width={30}
+              className="hidden lg:absolute lg:-left-36 lg:block lg:w-48 xl:-left-44 xl:w-64"
               src="/speaker.svg"
               alt="Speaker"
             />
             <div className="relative mb-1 flex flex-row items-center justify-center lg:mb-5">
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="absolute -left-8 w-10 lg:hidden"
                 src="/angle.svg"
                 alt="Angle bracket"
@@ -47,14 +54,18 @@ export default function Home() {
               <p className="text-4xl font-bold text-accent lg:text-5xl">
                 Speaker
               </p>
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="absolute -right-16 top-0 w-10 lg:hidden"
                 src="/mic.svg"
                 alt="Microphone"
               />
             </div>
             <div className="lg:relative">
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="hidden lg:absolute lg:-right-9 lg:top-3 lg:block lg:w-10"
                 src="/left_angle.svg"
                 alt="Angle bracket"
@@ -66,13 +77,15 @@ export default function Home() {
               </p>
             </div>
             <div className="lg:relative">
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="hidden lg:absolute lg:-right-9 lg:top-3 lg:block lg:w-10"
                 src="/left_angle.svg"
                 alt="Angle bracket"
               />
               <p className="mb-2.5 text-center text-lg font-semibold lg:mb-12 lg:text-right lg:text-xl">
-                L’intervento dovra’ avere una durata <br /> massima di{" "}
+                L&apos;intervento dovra&apos; avere una durata <br /> massima di{" "}
                 <span className="text-accent">15</span> minuti
               </p>
             </div>
@@ -85,13 +98,17 @@ export default function Home() {
           </div>
           <hr className="my-4 h-0.5 w-80 border-0 bg-accent lg:absolute lg:my-10 lg:h-80 lg:w-0.5 lg:bg-accent" />
           <div className="flex flex-col items-center justify-center lg:relative lg:ml-20 lg:items-start">
-            <img
-              className="hidden lg:absolute lg:-right-28 lg:block lg:w-32 xl:w-48 xl:-right-48"
+            <Image
+              height={30}
+              width={30}
+              className="hidden lg:absolute lg:-right-28 lg:block lg:w-32 xl:-right-48 xl:w-48"
               src="/sponsor.svg"
               alt="Sponsor"
             />
             <div className="relative mb-1 flex flex-row items-center justify-center">
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="absolute -left-8 w-10 lg:hidden"
                 src="/angle.svg"
                 alt="Angle bracket"
@@ -99,26 +116,32 @@ export default function Home() {
               <p className="text-4xl font-bold text-accent lg:mb-4 lg:text-5xl">
                 Sponsor
               </p>
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="absolute -right-16 top-0 w-10 lg:hidden"
                 src="/paper.svg"
                 alt="Paper"
               />
             </div>
             <div className="lg:relative">
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="hidden lg:absolute lg:-left-9 lg:top-3 lg:block lg:w-10"
                 src="/right_angle.svg"
                 alt="Angle bracket"
               />
               <p className="mb-2.5 text-center text-lg font-semibold lg:mb-5 lg:text-left lg:text-xl">
-                Vuoi <span className="text-accent">supportare</span> l’evento
-                con un <br />
+                Vuoi <span className="text-accent">supportare</span>{" "}
+                l&apos;evento con un <br />
                 contributo economico
               </p>
             </div>
             <div className="lg:relative">
-              <img
+              <Image
+                height={30}
+                width={30}
                 className="hidden lg:absolute lg:-left-9 lg:top-3 lg:block lg:w-10"
                 src="/right_angle.svg"
                 alt="Angle bracket"

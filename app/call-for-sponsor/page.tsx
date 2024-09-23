@@ -1,16 +1,15 @@
 "use client";
 
-import { submitTalk } from "../actions";
+import { submitSponsor, SubmitResponse } from "../actions";
 import { useFormState, useFormStatus } from "react-dom";
 import { useState } from "react";
 
 export default function CallForSponsor() {
-  const [state, formAction] = useFormState(submitTalk, {
+  const initialState: SubmitResponse = {
     success: false,
-    data: {},
-    error: undefined,
-  });
-
+    error: "",
+  };
+  const [state, formAction] = useFormState(submitSponsor, initialState);
   const { pending } = useFormStatus();
   const [consent, setConsent] = useState(false);
 

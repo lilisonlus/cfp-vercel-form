@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
@@ -32,7 +33,13 @@ export default function RootLayout({
       >
         <header className="mb-7 flex h-1/6 flex-col items-center lg:flex-row lg:justify-between">
           <Link href={"/"}>
-            <img className="w-60 lg:w-80" src="/Lilis.svg" alt="LILIS Logo" />
+            <Image
+              className="w-60 lg:w-80"
+              src="/Lilis.svg"
+              alt="LILIS Logo"
+              height={30}
+              width={30}
+            />
           </Link>
           <p className="hidden lg:block lg:text-right lg:text-xl lg:font-extrabold lg:text-accent">
             Indirizzo /<br />
