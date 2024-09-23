@@ -34,7 +34,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center lg:flex-row">
           <div className="flex flex-col items-center justify-center lg:relative lg:items-end">
             <img
-              className="hidden lg:absolute lg:-left-48 lg:block lg:w-80"
+              className="hidden lg:absolute lg:-left-36 lg:block lg:w-48 xl:w-64 xl:-left-44"
               src="/speaker.svg"
               alt="Speaker"
             />
@@ -86,7 +86,7 @@ export default function Home() {
           <hr className="my-4 h-0.5 w-80 border-0 bg-accent lg:absolute lg:my-10 lg:h-80 lg:w-0.5 lg:bg-accent" />
           <div className="flex flex-col items-center justify-center lg:relative lg:ml-20 lg:items-start">
             <img
-              className="hidden lg:absolute lg:-right-64 lg:block lg:w-80"
+              className="hidden lg:absolute lg:-right-28 lg:block lg:w-32 xl:w-48 xl:-right-48"
               src="/sponsor.svg"
               alt="Sponsor"
             />
