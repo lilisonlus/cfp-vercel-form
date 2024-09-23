@@ -78,13 +78,13 @@ export default function Home() {
             </div>
             <Link
               href={"/call-for-talk"}
-              className="rounded bg-accent px-3 py-1 text-xl font-bold lg:text-2xl"
+              className="h-8 rounded bg-accent px-2 text-center text-xl font-bold lg:h-10 lg:text-2xl"
             >
               Candidati
             </Link>
           </div>
           <hr className="my-4 h-0.5 w-80 border-0 bg-accent lg:absolute lg:my-10 lg:h-80 lg:w-0.5 lg:bg-accent" />
-          <div className="lg:ml-20 flex flex-col items-center justify-center lg:relative lg:items-start">
+          <div className="flex flex-col items-center justify-center lg:relative lg:ml-20 lg:items-start">
             <img
               className="hidden lg:absolute lg:-right-64 lg:block lg:w-80"
               src="/sponsor.svg"
@@ -123,14 +123,14 @@ export default function Home() {
                 src="/right_angle.svg"
                 alt="Angle bracket"
               />
-              <p className="mb-2.5 text-center text-lg font-semibold lg:mb-12 lg:text-right lg:text-xl">
+              <p className="mb-2.5 text-center text-lg font-semibold lg:mb-12 lg:text-left lg:text-xl">
                 Nome e logo del tuo brand saranno <br />
                 riportati sul materiale promozionale
               </p>
             </div>
             <Link
               href={"/call-for-sponsor"}
-              className="rounded bg-accent px-3 py-1 text-xl font-bold lg:text-2xl"
+              className="h-8 rounded bg-accent px-2 text-center text-xl font-bold lg:h-10 lg:text-2xl"
             >
               Sponsorizza
             </Link>
