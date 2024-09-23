@@ -1,48 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0C4767;
+  --foreground: #FFFFFF;
+  --accent: #FE9920;
+}
+
 body {
-  background: #f9f9f9;
-  font-family: 'ChunkFive', Helvetica, Arial, sans-serif !important;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-manrope);
 }
 
-header {
-  background: #e0e0e0;
-  padding: 20px;
-  border-bottom: 2px solid black;
-}
-
-.logolilis,
-.logolinuxday {
-  height: 120px;
-}
-
-header h1 {
-  font-size: 4em;
-  margin: 0;
-}
-
-header h2 {
-  font-size: 1.5em;
-  font-weight: normal;
-  margin: 10px 0 0 0;
-  color: #555;
-}
-
-.card {
-  border-radius: 15px;
-}
-
-.btn {
-  border-radius: 10px;
-}
-
-.ldt {
-  line-height: 1 !important;
-}
-
-.ldtv {
-  display: inline-block;
-}
-
-img,
-svg {
-  vertical-align: unset !important;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
