@@ -99,6 +99,7 @@ async function sendMessage(message: string): Promise<SubmissionFormState> {
     return {
       success: true,
     };
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (e) {
     return {
       errors: {
