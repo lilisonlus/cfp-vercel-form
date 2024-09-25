@@ -2,7 +2,7 @@
 
 import { useFormState, useFormStatus } from "react-dom";
 import { useEffect, useRef, useState } from "react";
-import { SubmitResponse, submitTalk } from "@/app/actions";
+import { submitTalk } from "@/app/actions";
 import { FormInput, FormTextArea } from "@/components/shared";
 import { SubmissionFormState } from "../types";
 import toast from "react-hot-toast";
