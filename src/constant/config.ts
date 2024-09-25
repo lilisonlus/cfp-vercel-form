@@ -5,7 +5,7 @@ export const siteConfig = {
 };
 
 export const eventData = {
-  address: "Auditorium Sant'Agostino",
+  address: "Complesso Sant'Agostino",
   city: "Benevento (BN)",
   date: "26 Ottobre",
 };
