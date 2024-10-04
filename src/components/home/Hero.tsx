@@ -27,7 +27,10 @@ export default function Hero() {
         {eventData.address}
       </p>
       <p className="text-lg font-extrabold text-accent md:hidden">
-        {eventData.city} / {eventData.date}
+        {eventData.city}
+      </p>
+      <p className="text-lg font-extrabold text-accent md:hidden">
+        {eventData.date}
       </p>
     </div>
   );
