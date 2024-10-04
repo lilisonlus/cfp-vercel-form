@@ -5,7 +5,7 @@ export const siteConfig = {
 };
 
 export const eventData = {
-  address: "Complesso Sant'Agostino",
-  city: "Benevento (BN)",
+  address: "Cubo Unisannio - Aula 5",
+  city: "Via dei Mulini, Benevento (BN)",
   date: "26 Ottobre",
 };
