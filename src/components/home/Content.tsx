@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 export default function Content() {
+
   return (
     <div className="flex flex-col items-center justify-center">
       <p className="mb-2 text-center text-lg font-bold capitalize md:mb-12 md:text-3xl lg:text-4xl">

@@ -1,10 +1,11 @@
-import { Content, Hero } from "@/components/home";
+import { Content, Hero, Closed } from "@/components/home";
 
 export default function Home() {
+  console.log("OPEN", process.env.CFP_OPEN)
   return (
     <>
       <Hero />
-      <Content />
+       { process.env.CFP_OPEN == "true" ? <Content /> : <Closed /> }
     </>
   );
 }

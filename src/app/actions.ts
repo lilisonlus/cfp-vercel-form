@@ -75,6 +75,12 @@ async function sendMessage(message: string): Promise<SubmissionFormState> {
   const token = process.env.LINUX_DAY_TELEGRAM_BOT_TOKEN;
   const telegramApiUrl = `https://api.telegram.org/bot${token}/sendMessage`;
 
+  if (process.env.CFP_OPEN != "true") return {
+    errors: {
+      sendMessage: "Iscrizioni chiuse",
+    },
+  };
+
   try {
     const response = await fetch(telegramApiUrl, {
       method: "POST",
