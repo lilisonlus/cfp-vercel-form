@@ -18,7 +18,7 @@ export default function Hero() {
         />
       </div>
       <p className="mb-3.5 text-7xl font-bold uppercase md:col-start-3 md:col-end-8 md:row-start-2 md:text-[7rem] lg:text-[8rem]">
-        Day <span className="text-accent">2024</span>
+        Day <span className="text-accent">2025</span>
       </p>
       <p className="text-xl font-extralight md:col-start-2 md:col-end-8 md:row-start-3 md:text-center md:text-3xl lg:text-4xl">
         Giornata nazionale per il software libero
