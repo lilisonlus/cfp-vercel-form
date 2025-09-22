@@ -1,16 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --background: #0c4767;
-  --foreground: #ffffff;
-  --accent: #fe9920;
+@theme {
+  --color-background: #0c4767;
+  --color-foreground: #ffffff;
+  --color-accent: #fe9920;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: theme(colors.foreground);
+  background: theme(colors.background);
   font-family: var(--font-manrope);
 }
 
