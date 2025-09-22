@@ -7,7 +7,7 @@ export const sponsorSchema = z.object({
   surname: z
     .string({ message: "E' richiesto il cognome" })
     .min(1, "E' richiesto il cognome"),
-  email: z.string().email({ message: "E' richiesta una mail valida" }),
+  email: z.email({ message: "E' richiesta una mail valida" }),
   company: z
     .string({ message: "E' richiesto il nome dell'azienda/organizzazione" })
     .min(1, "E' richiesto il nome dell'azienda/organizzazione"),
