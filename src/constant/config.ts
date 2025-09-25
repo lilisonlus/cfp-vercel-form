@@ -5,7 +5,7 @@ export const siteConfig = {
 };
 
 export const eventData = {
-  address: "Cubo Unisannio - Aula 5",
+  address: "Cubo Unisannio",
   city: "Via dei Mulini, Benevento (BN)",
-  date: "26 Ottobre",
+  date: "25 Ottobre",
 };
