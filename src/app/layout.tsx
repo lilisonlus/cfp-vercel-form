@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
-    images: [`${siteConfig.url}/images/og-image-cfp-1600x916.png`],
+    images: [`${siteConfig.url}/images/og-image-cfp-1600x916-2025-1.png`],
     type: "website",
     locale: "it_IT",
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [`${siteConfig.url}/images/og-image-cfp-1600x725.png`],
+    images: [`${siteConfig.url}/images/og-image-cfp-1600x725-2025-1.png`],
   },
 };
 
