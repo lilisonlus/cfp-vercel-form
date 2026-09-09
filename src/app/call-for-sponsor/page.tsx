@@ -1,8 +1,7 @@
 "use client";
 
 import { submitSponsor } from "../actions";
-import { useFormState, useFormStatus } from "react-dom";
-import { useEffect, useRef, useState } from "react";
+import { useActionState, useEffect, useRef, useState } from "react";
 import { FormInput } from "@/components/shared";
 import { SubmissionFormState } from "../types";
 import toast from "react-hot-toast";
@@ -12,8 +11,7 @@ import { FaCheckCircle } from "react-icons/fa";
 const initialState: SubmissionFormState = {};
 
 export default function CallForSponsor() {
-  const [state, formAction] = useFormState(submitSponsor, initialState);
-  const { pending } = useFormStatus();
+  const [state, formAction, pending] = useActionState(submitSponsor, initialState);
 
   const [consent, setConsent] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);

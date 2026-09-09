@@ -1,7 +1,6 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
-import { useEffect, useRef, useState } from "react";
+import { useActionState, useEffect, useRef, useState } from "react";
 import { submitTalk } from "@/app/actions";
 import { FormInput, FormTextArea } from "@/components/shared";
 import { SubmissionFormState } from "../types";
@@ -12,8 +11,7 @@ import { FaCheckCircle } from "react-icons/fa";
 const initialState: SubmissionFormState = {};
 
 export default function CallForTalk() {
-  const [state, formAction] = useFormState(submitTalk, initialState);
-  const { pending } = useFormStatus();
+  const [state, formAction, pending] = useActionState(submitTalk, initialState);
 
   const [consent, setConsent] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
