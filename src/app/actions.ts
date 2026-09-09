@@ -131,7 +131,7 @@ function composeTalkMessage(data: Talk): string {
   message += `<b>Cognome</b>: ${data.surname}\n`;
   message += `<b>Email</b>: ${data.email}\n`;
   message += data.presentation
-    ? `<b>Presentazione</b>: ${data.presentation}\n`
+    ? `<b>Presentazione personale</b>: ${data.presentation}\n`
     : "";
   message += data.title ? `<b>Titolo</b>: ${data.title}\n` : "";
   message += data.abstract ? `<b>Abstract</b>: ${data.abstract}\n` : "";

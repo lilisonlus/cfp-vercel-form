@@ -65,21 +65,21 @@ export default function CallForTalk() {
         />
         <FormTextArea
           id="presentation"
-          text="Presentazione"
+          text="Presentazione personale"
           rows={3}
           defaultValue={state.data?.company}
           error={state.errors?.company}
         />
         <FormInput
           id="title"
-          text="Titolo"
+          text="Titolo del tak"
           type="text"
           defaultValue={state.data?.title}
           error={state.errors?.title}
         />
         <FormTextArea
           id="abstract"
-          text="Abstract"
+          text="Abstract del talk"
           rows={5}
           defaultValue={state.data?.abstract}
           error={state.errors?.abstract}
